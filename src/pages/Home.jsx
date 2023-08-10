@@ -6,7 +6,7 @@ export default function Home(){
 
 const [print,setPrint]= useState('');
 useEffect(()=>{
-    api.get("/").then(res=>{
+    api.get("/register/product/new").then(res=>{
         const titulo = res.data[0].titulo;
         setPrint(titulo);
     });

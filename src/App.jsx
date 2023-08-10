@@ -12,6 +12,7 @@ import Error404 from "./pages/Error404";
 
 //Components
 import NavBar from "./components/NavBar";
+import Form from './components/Form';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="category" element={<Category/>} />
         <Route path="article" element={<Article/>} />
         <Route path="about" element={<About/>} />
+        <Route path="products" element={<Form/>}/>
         <Route path="*" element={<Error404/>}/>
       </Route>
     </Routes>
