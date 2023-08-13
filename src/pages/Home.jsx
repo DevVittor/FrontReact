@@ -29,6 +29,7 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                     {Foto.map((link, index) => (
                         <div className="mb-2.5 w-full break-inside-avoid hover:cursor-pointer" key={index}>
                             <img
+                                loading="lazy"
                                 className="max-w-full rounded-xl"
                                 src={link}
                                 alt={`Imagem ${index + 1}`}

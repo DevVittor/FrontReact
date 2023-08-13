@@ -14,9 +14,9 @@ export default function Form() {
     return (
         <>
         
-            <span>Name: {data.name}</span>
+            <span>Name: {data.id}</span>
             <br/>
-            <span>Age: {data.age}</span>
+            <span>Age: {data.product}</span>
             
         </>
     );
