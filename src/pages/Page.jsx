@@ -20,7 +20,7 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                                 <h2 className="font-semibold text-2xl">Jéssica Gomes, 22 Anos</h2>
                                 <h4 className="mt-1.5 text-[15px] font-light"><i className="pr-1.5 text-red-500 bi bi-geo-alt-fill"></i>Rio de Janeiro, Rj</h4>
                             </div>
-                            <div className="w-[450px] mt-2 text-center pr-3 pl-3">
+                            <div className="w-full mt-2 text-center pr-3 pl-3">
                                 <p className="font-medium text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quisquam deleniti hic nam assumenda. Ducimus sapiente, illum temporibus eos perferendis necessitatibus, delectus praesentium cumque, minus ullam velit? Dignissimos dolore deserunt ipsa iste illum? In ut harum omnis laudantium facere.</p>
                             </div>
                             <div className="flex justify-center pt-2.5 pb-3">
