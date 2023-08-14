@@ -9,6 +9,7 @@ import Category from './pages/Category';
 import Article from './pages/Article';
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
+import Page from './pages/Page';
 
 //Components
 import NavBar from "./components/NavBar";
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="article" element={<Article/>} />
         <Route path="about" element={<About/>} />
         <Route path="products" element={<Form/>}/>
+        <Route path="page" element={<Page/>}/>
         <Route path="*" element={<Error404/>}/>
       </Route>
     </Routes>
