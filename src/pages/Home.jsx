@@ -23,13 +23,18 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
             <section>
                 <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 gap-3 p-3">
                     {Foto.map((link, index) => (
-                        <div className="mb-2.5 w-full break-inside-avoid hover:cursor-pointer" key={index}>
+                        <div className="group flex justify-start items-end mb-2.5 relative w-full break-inside-avoid hover:cursor-pointer" key={index}>
                             <img
                                 loading="lazy"
                                 className="max-w-full rounded-xl pointer-events-none"
                                 src={link}
                                 alt={`Imagem ${index + 1}`}
                             />
+                            <div className="group-hover:opacity-100 w-full backdrop-blur-2xl transition-opacity delay-150 opacity-0 absolute p-2.5 rounded-b-xl text-white">
+                                <h3 className="text-lg font-extrabold truncate text-white drop-shadow-xl shadow-black">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, veniam.
+                                </h3>
+                            </div>
                         </div>
                     ))}
                 </div>
