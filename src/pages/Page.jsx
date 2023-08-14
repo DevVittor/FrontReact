@@ -7,27 +7,27 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
     return (
         <main>
             <section>
-                <div className="h-auto 2xl:pb-3 2xl:pt-6 bg-white flex  justify-center items-center">
-                    <div className="bg-white h-auto pt-3 pb-3 w-auto hover:cursor-pointer flex flex-col">
+                <div className="h-auto bg-red-500 w-full flex justify-center items-center">
+                    <div className="bg-white h-auto pt-3 pb-3 w-full hover:cursor-pointer flex flex-col">
                         <div className="flex items-end justify-center">
                             <img className="max-h-[350px] w-[200px] object-cover rounded-[3px]" loading="lazy" src="https://images.pexels.com/photos/247297/pexels-photo-247297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                             <div className="absolute">
                                 <h3 className="m-2 bg-blue-500 text-white font-semibold pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]">R$ 250/H</h3>
                             </div>
                         </div>
-                        <div className="p-3 flex flex-col bg-white">
+                        <div className="flex flex-col bg-white w-full pt-3">
                             <div className="flex flex-col text-center">
                                 <h2 className="font-semibold text-2xl">Jéssica Gomes, 22 Anos</h2>
                                 <h4 className="mt-1.5 text-[15px] font-light"><i className="pr-1.5 text-red-500 bi bi-geo-alt-fill"></i>Rio de Janeiro, Rj</h4>
                             </div>
-                            <div className="w-[450px] mt-2 text-center">
+                            <div className="w-[450px] mt-2 text-center pr-3 pl-3">
                                 <p className="font-medium text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quisquam deleniti hic nam assumenda. Ducimus sapiente, illum temporibus eos perferendis necessitatibus, delectus praesentium cumque, minus ullam velit? Dignissimos dolore deserunt ipsa iste illum? In ut harum omnis laudantium facere.</p>
                             </div>
-                            <div className="flex justify-center pt-2.5">
+                            <div className="flex justify-center pt-2.5 pb-3">
                                 <button className="bg-green-400 font-semibold text-white text-lg pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]"><i className="pr-1.5 bi bi-whatsapp"></i>Conversar</button>
                             </div>
                         </div>
-                        <div className="bg-black p-5 h-auto flex justify-center items-center flex-col gap-3">
+                        <div className="bg-black p-5 h-auto flex justify-center items-center flex-col gap-3 w-full">
                             <div className="">
                                 <nav>
                                     <ul className="flex flex-row gap-3 text-2xl text-white">
