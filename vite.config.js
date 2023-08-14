@@ -5,7 +5,8 @@ export default {
   plugins: [react()],
   server: {
     proxy: {
-      '/products': 'http://localhost:5000/', // Altere para o URL do seu servidor backend
+      '/products': 'http://localhost:3000/', // Altere para o URL do seu servidor backend
+      '/products/save': 'http://localhost:3000/',
     },
   },
 };
