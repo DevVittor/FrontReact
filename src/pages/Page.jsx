@@ -7,8 +7,8 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
     return (
         <main>
             <section>
-                <div className="h-auto w-full flex justify-center items-center pt-6 pb-3">
-                    <div className="bg-white border-2 border-gray-100 h-auto flex 2xl:justify-center flex-col 2xl:flex-row">
+                <div className="h-auto w-full flex justify-center items-center pt-3 2xl:pt-6 2xl:pb-3">
+                    <div className="bg-white 2xl:border-2 2xl:border-gray-100 h-auto flex 2xl:justify-center flex-col 2xl:flex-row">
                         <div className="flex items-end justify-center">
                             <img className="2xl:h-[450px] 2xl:w-[230px] max-h-[350px] w-[200px] object-cover" loading="lazy" src="https://images.pexels.com/photos/247297/pexels-photo-247297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                             <div className="absolute">
@@ -23,7 +23,7 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                             <div className="w-full pt-2">
                                 <p className="font-medium text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quisquam deleniti hic nam assumenda. Ducimus sapiente, illum temporibus eos perferendis necessitatibus, delectus praesentium cumque, minus ullam velit? Dignissimos dolore deserunt ipsa iste illum? In ut harum omnis laudantium facere.</p>
                             </div>
-                            <div className="flex justify-center pt-5">
+                            <div className="flex justify-center pt-2.5">
                                 <button className="bg-blue-500 font-semibold text-white text-lg pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]"><i className="pr-2 bi bi-check-circle"></i>Verificada</button>
                             </div>
                         </div>
