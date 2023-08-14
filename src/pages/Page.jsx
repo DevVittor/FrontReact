@@ -7,30 +7,30 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
     return (
         <main>
             <section>
-                <div className="h-auto bg-red-500 w-full flex justify-center items-center">
-                    <div className="bg-white h-auto pt-3 pb-3 w-full hover:cursor-pointer flex flex-col">
+                <div className="h-auto w-full flex justify-center items-center pt-6 pb-3">
+                    <div className="bg-white border-2 border-gray-100 h-auto flex 2xl:justify-center flex-col 2xl:flex-row">
                         <div className="flex items-end justify-center">
-                            <img className="max-h-[350px] w-[200px] object-cover rounded-[3px]" loading="lazy" src="https://images.pexels.com/photos/247297/pexels-photo-247297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                            <img className="2xl:h-[450px] 2xl:w-[230px] max-h-[350px] w-[200px] object-cover" loading="lazy" src="https://images.pexels.com/photos/247297/pexels-photo-247297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                             <div className="absolute">
-                                <h3 className="m-2 bg-blue-500 text-white font-semibold pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]">R$ 250/H</h3>
+                                <h3 className="m-2 bg-black shadow-md text-white font-semibold pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]">R$ 250/H</h3>
                             </div>
                         </div>
-                        <div className="flex flex-col bg-white w-full pt-3">
-                            <div className="flex flex-col text-center">
+                        <div className="flex flex-col justify-center 2xl:w-[500px] bg-white w-full p-3">
+                            <div className="flex flex-col">
                                 <h2 className="font-semibold text-2xl">Jéssica Gomes, 22 Anos</h2>
                                 <h4 className="mt-1.5 text-[15px] font-light"><i className="pr-1.5 text-red-500 bi bi-geo-alt-fill"></i>Rio de Janeiro, Rj</h4>
                             </div>
-                            <div className="w-full mt-2 text-center pr-3 pl-3">
+                            <div className="w-full pt-2">
                                 <p className="font-medium text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quisquam deleniti hic nam assumenda. Ducimus sapiente, illum temporibus eos perferendis necessitatibus, delectus praesentium cumque, minus ullam velit? Dignissimos dolore deserunt ipsa iste illum? In ut harum omnis laudantium facere.</p>
                             </div>
-                            <div className="flex justify-center pt-2.5 pb-3">
-                                <button className="bg-green-400 font-semibold text-white text-lg pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]"><i className="pr-1.5 bi bi-whatsapp"></i>Conversar</button>
+                            <div className="flex justify-center pt-5">
+                                <button className="bg-blue-500 font-semibold text-white text-lg pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]"><i className="pr-2 bi bi-check-circle"></i>Verificada</button>
                             </div>
                         </div>
-                        <div className="bg-black p-5 h-auto flex justify-center items-center flex-col gap-3 w-full">
+                        <div className="bg-black p-5 2xl:p-3 h-auto flex justify-center 2xl:justify-between items-center flex-col gap-3 ">
                             <div className="">
                                 <nav>
-                                    <ul className="flex flex-row gap-3 text-2xl text-white">
+                                    <ul className="flex flex-row 2xl:flex-col gap-3 text-2xl text-white">
                                         <li><i className="bi bi-facebook"></i></li>
                                         <li><i className="bi bi-instagram"></i></li>
                                         <li><i className="bi bi-twitter"></i></li>
@@ -39,14 +39,14 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                                 </nav>
                             </div>
                             <div className="">
-                                <button className="text-2xl"><i className="text-white bg-red-500 rounded-[3px] pr-[25px] pl-[25px] pt-[5px] pb-[5px] bi bi-exclamation-triangle-fill"></i></button>
+                                <button className="text-2xl"><i className="text-red-500 bi bi-exclamation-triangle-fill"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 gap-3 p-3">
+                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 columns-1 gap-3 p-3">
                     {Foto.map((link, index) => (
                         <div className="group flex justify-start items-end mb-2.5 relative w-full break-inside-avoid hover:cursor-pointer" key={index}>
                             <img
@@ -55,7 +55,7 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                                 src={link}
                                 alt={`Imagem ${index + 1}`}
                             />
-                            <div className="group-hover:opacity-100 w-full backdrop-blur-2xl transition-opacity delay-150 opacity-0 absolute p-2 rounded-b-xl text-white">
+                            <div className="group-hover:opacity-100 w-full bg-black transition-opacity delay-150 opacity-0 absolute p-2 rounded-b-xl text-white">
                                 <h3 className="text-[14px] font-extrabold truncate text-white drop-shadow-xl shadow-black">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, veniam.
                                 </h3>
