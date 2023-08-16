@@ -9,13 +9,30 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
             <section>
                 <div className="h-auto w-full flex justify-center items-center pt-3 2xl:pt-6 2xl:pb-3">
                     <div className="bg-white 2xl:border-2 2xl:border-gray-100 h-auto flex 2xl:justify-center flex-col 2xl:flex-row">
-                        <div className="flex items-end justify-center">
+                        <div className="flex flex-col items-end justify-start">
+                            <div className="">
                             <img className="2xl:h-[450px] 2xl:w-[230px] max-h-[350px] w-[200px] object-cover" loading="lazy" src="https://images.pexels.com/photos/247297/pexels-photo-247297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                            </div>
                             <div className="absolute">
-                                <h3 className="m-2 bg-black shadow-md text-white font-semibold pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]">R$ 250/H</h3>
+                                <i className="text-xl m-2 fa-solid fa-circle-check"></i>
+                            </div>
+                            <div className="flex flex-col items-center justify-center bg-black w-full p-1">
+                                <div className="">
+                                    <h3 className="bg-black shadow-md text-white font-semibold pt-[5px] pb-[5px] pr-[20px] pl-[20px] rounded-[3px]">R$ 250/H</h3>
+                                </div>
+                                <div className="">
+                                    <nav>
+                                        <ul className="flex 2xl:flex-row gap-3 text-lg text-white">
+                                            <li><i className="bi bi-facebook"></i></li>
+                                            <li><i className="bi bi-instagram"></i></li>
+                                            <li><i className="bi bi-twitter"></i></li>
+                                            <li><i className="bi bi-tiktok"></i></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
-                        <div className="flex flex-col justify-center 2xl:w-[500px] bg-white w-full p-3">
+                        <div className="flex flex-col justify-start 2xl:w-[500px] bg-white w-full p-3">
                             <div className="flex flex-col">
                                 <h2 className="font-semibold text-2xl">Jéssica Gomes, 22 Anos</h2>
                                 <h4 className="mt-1.5 text-[15px] font-light"><i className="pr-1.5 text-red-500 bi bi-geo-alt-fill"></i>Rio de Janeiro, Rj</h4>
@@ -31,10 +48,12 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                             <div className="">
                                 <nav>
                                     <ul className="flex flex-row 2xl:flex-col gap-3 text-2xl text-white">
-                                        <li><i className="bi bi-facebook"></i></li>
-                                        <li><i className="bi bi-instagram"></i></li>
-                                        <li><i className="bi bi-twitter"></i></li>
-                                        <li><i className="bi bi-tiktok"></i></li>
+                                        
+                                        <li><i className="fa-solid fa-child-reaching"></i></li>
+                                        <li><i className="fa-solid fa-bell-concierge"></i></li>
+                                        <li><i className="fa-solid fa-camera-retro"></i></li>
+                                        <li><i className="fa-solid fa-video"></i></li>
+                                        <li><i className="fa-solid fa-map-location-dot"></i></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -46,7 +65,7 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                 </div>
             </section>
             <section>
-                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 columns-1 gap-3 p-3">
+                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 columns-1 gap-3 p-3">
                     {Foto.map((link, index) => (
                         <div className="group flex justify-start items-end mb-2.5 relative w-full break-inside-avoid hover:cursor-pointer" key={index}>
                             <img

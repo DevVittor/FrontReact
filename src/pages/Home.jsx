@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../Home.css";
+import { Link } from "react-router-dom";
 
 export default function Home(){
 
@@ -21,22 +22,24 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                 </div>
             </section>
             <section>
-                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 gap-3 p-3">
-                    {Foto.map((link, index) => (
-                        <div className="group flex justify-start items-end mb-2.5 relative w-full break-inside-avoid hover:cursor-pointer" key={index}>
-                            <img
-                                loading="lazy"
-                                className="max-w-full rounded-xl pointer-events-none"
-                                src={link}
-                                alt={`Imagem ${index + 1}`}
-                            />
-                            <div className="group-hover:opacity-100 w-full backdrop-blur-2xl transition-opacity delay-150 opacity-0 absolute p-2 rounded-b-xl text-white">
-                                <h3 className="text-[14px] font-extrabold truncate text-white drop-shadow-xl shadow-black">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, veniam.
-                                </h3>
+                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 p-3">
+                    <Link to="/products/:id">
+                        {Foto.map((link, index) => (
+                            <div className="group flex justify-start items-end mb-2.5 relative w-full break-inside-avoid hover:cursor-pointer" key={index}>
+                                <img
+                                    loading="lazy"
+                                    className="max-w-full rounded-xl pointer-events-none"
+                                    src={link}
+                                    alt={`Imagem ${index + 1}`}
+                                />
+                                <div className="group-hover:opacity-100 w-full backdrop-blur-2xl transition-opacity delay-150 opacity-0 absolute p-2 rounded-b-xl text-white">
+                                    <h3 className="text-[14px] font-extrabold truncate text-white drop-shadow-xl shadow-black">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, veniam.
+                                    </h3>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </Link>
                 </div>
             </section>
             <section className="h-[400px] flex items-center justify-center p-3 bg-black text-white border-b-2 border-white">

@@ -15,7 +15,6 @@ export default function NavBar(){
                                 <li><Link to="article">Article</Link></li>
                                 <li><Link to="about">About</Link></li>
                                 <li><Link to="products">Form</Link></li>
-                                <li><Link to="page">Product</Link></li>
                             </ul>
                         </nav>
                     </div>

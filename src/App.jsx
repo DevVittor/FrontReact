@@ -26,7 +26,7 @@ export default function App() {
         <Route path="article" element={<Article/>} />
         <Route path="about" element={<About/>} />
         <Route path="products" element={<Form/>}/>
-        <Route path="page" element={<Page/>}/>
+        <Route path="products/:id" element={<Page/>}/>
         <Route path="*" element={<Error404/>}/>
       </Route>
     </Routes>
