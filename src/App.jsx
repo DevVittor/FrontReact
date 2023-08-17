@@ -14,6 +14,7 @@ import Page from './pages/Page';
 //Components
 import NavBar from "./components/NavBar";
 import Form from './components/Form';
+import Shop from './pages/Shop';
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="about" element={<About/>} />
         <Route path="products" element={<Form/>}/>
         <Route path="products/:id" element={<Page/>}/>
+        <Route path="shop" element={<Shop/>}/>
         <Route path="*" element={<Error404/>}/>
       </Route>
     </Routes>
