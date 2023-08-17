@@ -21,11 +21,11 @@ export default function Shop() {
   }, []);
 
   return (
-    <div>
-      <h1>Lista de Produtos</h1>
-      <ul>
+    <div className='flex items-center flex-col justify-center p-3'>
+      <h1 className='text-4xl font-semibold pb-3 '>Lista de Produtos:</h1>
+      <ul className='flex flex-col gap-2'>
         {products.map(product => (
-          <li key={product.id}>Id:{product.id} Product:{product.product}</li>
+          <li className='border-2 border-gray-100 p-2 rounded-md hover:cursor-pointer' key={product.id}>Id:{product.id}<br/> Product: {product.product}<br/> createdAt: {product.createdAt}</li>
         ))}
       </ul>
     </div>

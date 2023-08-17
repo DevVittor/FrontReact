@@ -23,8 +23,9 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
             </section>
             <section>
                 <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 p-3">
-                    <Link to="/products/:id">
+                    
                         {Foto.map((link, index) => (
+                            <Link to={`/products/${index + 1}`} key={index}>
                             <div className="group flex justify-start items-end mb-2.5 relative w-full break-inside-avoid hover:cursor-pointer" key={index}>
                                 <img
                                     loading="lazy"
@@ -38,8 +39,9 @@ const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90
                                     </h3>
                                 </div>
                             </div>
-                        ))}
+                        
                     </Link>
+                        ))}
                 </div>
             </section>
             <section className="h-[400px] flex items-center justify-center p-3 bg-black text-white border-b-2 border-white">

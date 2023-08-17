@@ -9,12 +9,13 @@ import Category from './pages/Category';
 import Article from './pages/Article';
 import About from "./pages/About";
 import Error404 from "./pages/Error404";
-import Page from './pages/Page';
+//import Page from './pages/Page';
 
 //Components
 import NavBar from "./components/NavBar";
 import Form from './components/Form';
 import Shop from './pages/Shop';
+import ProductPage from './pages/ProductPage';
 
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
         <Route path="article" element={<Article/>} />
         <Route path="about" element={<About/>} />
         <Route path="products" element={<Form/>}/>
-        <Route path="products/:id" element={<Page/>}/>
+        <Route path="products/:id" element={<ProductPage/>}/>
         <Route path="shop" element={<Shop/>}/>
         <Route path="*" element={<Error404/>}/>
       </Route>
