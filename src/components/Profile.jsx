@@ -11,7 +11,7 @@ export default function Profile(){
         <main>
             <section>
                 <div className="flex 2xl:flex-row justify-center items-start p-2">
-                    <div className="flex md:flex-row flex-col justify-center md:items-start items-center border-2 border-gray-100">
+                    <div className="flex md:flex-row flex-col justify-center md:items-start items-center md:border-2 md:border-gray-100">
                         <div className="">    
                             <div className="flex items-end justify-center">
                                 <img className="max-h-[350px] max-w-[300px] object-cover" loading="lazy" src={picture} alt="" />
@@ -22,20 +22,20 @@ export default function Profile(){
                         </div>
                         <div className="p-3 flex flex-col gap-2 ">
                             
-                            <div className="flex items-center gap-3">
+                            <div className="flex md:justify-start justify-center items-center gap-3">
                                 <h2 className="text-xl font-semibold ">Fernanda Lima, 26</h2>
                                 <i className="text-blue-500 text-lg fa-solid fa-circle-check"></i>
                             </div>
-                            <div className="flex items-center gap-3">
+                            <div className="flex md:justify-start justify-center items-center gap-3">
                                 <h4 className="font-light"><i className="text-red-500 pr-2 fa-solid fa-location-dot"></i>Rio de Janeiro, Rj</h4>
                                 <span className="font-light">|</span>
                                 <h4 className="font-light"><i className="text-pink-500 pr-2 fa-solid fa-mars"></i>Mulher</h4>
                             </div>
-                            <div className="">
-                                <p className="text-[16px] font-light max-w-[310px] pr-[3px] pl-[3px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis rerum, dicta, ad sunt adipisci fuga illo modi dolorem voluptas vero nisi, tempore repudiandae eius?</p>
+                            <div className="md:text-left  text-center">
+                                <p className="text-[16px] font-light max-w-[310px] md:pr-[3px] md:pl-[3px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis rerum, dicta, ad sunt adipisci fuga illo modi dolorem voluptas vero nisi, tempore repudiandae eius?</p>
                             </div>
                             <div className="">
-                                    <div className="flex justify-start items-center max-w-[350px]">
+                                    <div className="flex md:justify-start justify-center items-center max-w-[350px]">
                                         <nav>
                                             <ul className="flex gap-3 text-xl text-black">
                                                 <li><i className="bi bi-facebook"></i></li>
@@ -46,7 +46,7 @@ export default function Profile(){
                                         </nav>
                                     </div>
                                 </div>
-                            <div className="">
+                            <div className="flex md:justify-start justify-center">
                                 <button className="bg-green-500 text-white rounded-[3px] pt-[3px] pb-[3px] text-lg font-medium pl-[15px] pr-[15px]"><i className="pr-2 fa-brands fa-whatsapp"></i>Conversar</button>
                             </div>
                         </div>
