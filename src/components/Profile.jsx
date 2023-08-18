@@ -56,7 +56,7 @@ export default function Profile(){
             <section>
                 <div className="">
                     <nav>
-                        <ul className="bg-black text-white pt-3 pb-3 flex items-center justify-center pr-[8px] pl-[8px] flex-wrap gap-3">
+                        <ul className="bg-black text-white pt-3 flex items-center justify-center pr-[8px] pl-[8px] flex-wrap gap-3">
                             <li className="bg-white pr-[12px] pl-[12px] pt-[3px] pb-[3px] rounded-[3px] text-black font-semibold">Fotos</li>
                             <li>Vídeos</li>
                             <li>Descrição</li>
@@ -68,7 +68,7 @@ export default function Profile(){
                 </div>
             </section>
             <section>
-                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 p-3">
+                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 p-3 bg-black">
                     
                         {Foto.map((link, index) => (
                             <Link to={`/${index + 1}`} key={index}>

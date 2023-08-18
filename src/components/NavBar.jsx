@@ -22,8 +22,8 @@ export default function NavBar(){
                 </div>
             </header>
                 <Outlet/>
-            <footer className="bg-[#000] flex justify-center items-center p-[14px] ">
-                <span className="font-[400] text-[16px] text-white">Todos os direitos reservados &copy; | 2020 - 2025</span>
+            <footer className="bg-[#000] flex justify-center items-center border-t-[1px] border-gray-900 p-[14px] ">
+                <span className="font-[400] text-[16px] text-white">Todos os direitos reservados</span>
             </footer>
         </>
     )
