@@ -11,35 +11,18 @@ export default function Profile(){
         <main>
             <section>
                 <div className="flex justify-center items-start p-3 gap-5">
-                <div className="flex flex-col items-center justify-center gap-3 ">
-                        <div className="flex items-end justify-center gap-2">
-                            <div className="">
-                                <div className="flex flex-col justify-between items-center h-[250px] bg-black p-3 rounded-md">
-                                    <div className="">
-                                        <nav>
-                                            <ul className="flex flex-col gap-3 text-white">
-                                                <li><i className="text-xl fa-solid fa-camera"></i></li>
-                                                <li><i className="text-xl fa-solid fa-child-reaching"></i></li>
-                                                <li><i className="text-xl fa-solid fa-bell-concierge"></i></li>
-                                                <li><i className="text-xl fa-solid fa-map-location-dot"></i></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div className="">
-                                        <button><i className="text-xl text-red-600 fa-solid fa-triangle-exclamation"></i></button>
-                                    </div>
-                                </div>
-                            </div>
+                <div className="flex flex-col items-center justify-center gap-3">
+                        <div className="flex flex-col items-end justify-center gap-3">
                             <div className="flex items-end justify-center">
-                                <img className="h-[250px] w-[250px] object-cover rounded-md" loading="lazy" src={picture} alt="" />
+                                <img className="h-[350px] w-[350px] object-cover rounded-full" loading="lazy" src={picture} alt="" />
                                 <div className="absolute p-3">
                                     <span className="rounded-[3px] bg-[#FE0000] text-white font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
                                 </div>
                             </div>
                             <div className="">
-                                <div className="h-[250px] bg-black p-3 rounded-md">
+                                <div className="flex justify-center items-center w-[350px] p-3">
                                     <nav>
-                                        <ul className="flex flex-col gap-3 text-xl text-white">
+                                        <ul className="flex gap-3 text-xl text-black">
                                             <li><i className="bi bi-facebook"></i></li>
                                             <li><i className="bi bi-instagram"></i></li>
                                             <li><i className="bi bi-twitter"></i></li>
@@ -85,6 +68,20 @@ export default function Profile(){
                         </div> */}
                     </div>
                 </div>
+            </section>
+            <section>
+                <div className="flex flex-col justify-between items-center w-[350px] p-3 ">
+                    <div className="bg-black pr-5 pl-5 pt-2 pb-2 rounded-md">
+                        <nav>
+                            <ul className="flex gap-3 text-white">
+                                <li><i className="text-xl fa-solid fa-camera"></i></li>
+                                <li><i className="text-xl fa-solid fa-child-reaching"></i></li>
+                                <li><i className="text-xl fa-solid fa-bell-concierge"></i></li>
+                                <li><i className="text-xl fa-solid fa-map-location-dot"></i></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>              
             </section>
             <section>
                 <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 pb-3 pr-3 pl-3 ">
