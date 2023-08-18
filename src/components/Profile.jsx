@@ -11,16 +11,16 @@ export default function Profile(){
         <main>
             <section>
                 <div className="flex justify-center items-start p-3 gap-5">
-                <div className="flex flex-col items-center justify-center gap-3">
-                        <div className="flex flex-col items-end justify-center gap-3">
+                <div className="flex flex-col items-center justify-center gap-2">
+                        <div className="flex flex-col items-end justify-center gap-2">
                             <div className="flex items-end justify-center">
                                 <img className="h-[350px] w-[350px] object-cover rounded-full" loading="lazy" src={picture} alt="" />
-                                <div className="absolute p-3">
+                                <div className="absolute p-5">
                                     <span className="rounded-[3px] bg-[#FE0000] text-white font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
                                 </div>
                             </div>
                             <div className="">
-                                <div className="flex justify-center items-center w-[350px] p-3">
+                                <div className="flex justify-center items-center w-[350px]">
                                     <nav>
                                         <ul className="flex gap-3 text-xl text-black">
                                             <li><i className="bi bi-facebook"></i></li>
@@ -70,8 +70,8 @@ export default function Profile(){
                 </div>
             </section>
             <section>
-                <div className="flex flex-col justify-between items-center w-[350px] p-3 ">
-                    <div className="bg-black pr-5 pl-5 pt-2 pb-2 rounded-md">
+                <div className="flex flex-col justify-center items-center w-full pb-3">
+                    <div className="flex flex-col justify-center items-center bg-black pr-5 pl-5 pt-2 pb-2 rounded-md">
                         <nav>
                             <ul className="flex gap-3 text-white">
                                 <li><i className="text-xl fa-solid fa-camera"></i></li>
