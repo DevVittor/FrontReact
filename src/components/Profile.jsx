@@ -26,7 +26,7 @@ export default function Profile(){
                         <span className="font-light">|</span>
                         <h4 className="font-light"><i className="text-pink-500 pr-2 fa-solid fa-mars"></i>Mulher</h4>
                     </div>
-                    <div className="text-center ">
+                    {/*<div className="text-center ">
                         <p className="text-[16px] font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis rerum, dicta, ad sunt adipisci fuga illo modi dolorem voluptas vero nisi, tempore repudiandae eius?</p>
                     </div>
                     <div className="flex flex-col gap-3 w-full">
@@ -50,7 +50,21 @@ export default function Profile(){
                                 <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
                             </ul>
                         </nav>
-                    </div>
+                    </div> */}
+                </div>
+            </section>
+            <section>
+                <div className="">
+                    <nav>
+                        <ul className="bg-black text-white pt-3 pb-3 flex items-center justify-center pr-[8px] pl-[8px] flex-wrap gap-3">
+                            <li className="bg-white pr-[12px] pl-[12px] pt-[3px] pb-[3px] rounded-[3px] text-black font-semibold">Fotos</li>
+                            <li>Vídeos</li>
+                            <li>Descrição</li>
+                            <li>Serviços</li>
+                            <li>Corpo</li>
+                            <li>Redes Sociais</li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
             <section>
