@@ -10,61 +10,80 @@ export default function Profile(){
     return (
         <main>
             <section>
-                <div className="flex flex-col items-center justify-center gap-3 p-3">
-                    <div className="flex items-end justify-center ">
-                        <img className="h-[250px] w-[250px] object-cover rounded-full" loading="lazy" src={picture} alt="" />
-                        <div className="absolute">
-                            <i className="text-4xl fa-solid fa-play"></i>
+                <div className="flex justify-center items-start p-3 gap-5">
+                <div className="flex flex-col items-center justify-center gap-3 ">
+                        <div className="flex items-end justify-center ">
+                            <div className="">
+                                <div className="flex flex-col justify-between items-center h-[250px] bg-black p-3">
+                                    <div className="">
+                                        <nav>
+                                            <ul className="flex flex-col gap-3 text-white">
+                                                <li><i className="text-xl fa-solid fa-camera"></i></li>
+                                                <li><i className="text-xl fa-solid fa-child-reaching"></i></li>
+                                                <li><i className="text-xl fa-solid fa-bell-concierge"></i></li>
+                                                <li><i className="text-xl fa-solid fa-map-location-dot"></i></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div className="">
+                                        <button><i className="text-xl text-red-600 fa-solid fa-triangle-exclamation"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex items-end justify-center">
+                                <img className="h-[250px] w-[250px] object-cover " loading="lazy" src={picture} alt="" />
+                                <div className="absolute p-3">
+                                    <span className="rounded-[3px] bg-red-500 text-white font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
+                                </div>
+                            </div>
+                            <div className="">
+                                <div className="h-[250px] bg-black p-3">
+                                    <nav>
+                                        <ul className="flex flex-col gap-3 text-xl text-white">
+                                            <li><i className="bi bi-facebook"></i></li>
+                                            <li><i className="bi bi-instagram"></i></li>
+                                            <li><i className="bi bi-twitter"></i></li>
+                                            <li><i className="bi bi-tiktok"></i></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
+                        <div className="flex items-center gap-3">
+                            <h2 className="text-xl font-semibold ">Fernanda Lima, 26</h2>
+                            <i className="text-blue-500 text-lg fa-solid fa-circle-check"></i>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <h4 className="font-light"><i className="text-red-500 pr-2 fa-solid fa-location-dot"></i>Rio de Janeiro, Rj</h4>
+                            <span className="font-light">|</span>
+                            <h4 className="font-light"><i className="text-pink-500 pr-2 fa-solid fa-mars"></i>Mulher</h4>
+                        </div>
+                        <div className="text-center ">
+                            <p className="text-[16px] font-light 2xl:w-[425px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis rerum, dicta, ad sunt adipisci fuga illo modi dolorem voluptas vero nisi, tempore repudiandae eius?</p>
+                        </div>
+                        {/*<div className="flex flex-col gap-3 w-full">
+                            <h2 className="text-xl font-semibold">Serviços:</h2>
+                            <nav>
+                                <ul className="flex items-center flex-wrap gap-2">
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                    <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
+                                </ul>
+                            </nav>
+                        </div> */}
                     </div>
-                    <div className="flex items-center gap-3">
-                        <h2 className="text-xl font-semibold ">Fernanda Lima, 26</h2>
-                        <i className="text-blue-500 text-lg fa-solid fa-circle-check"></i>
-                    </div>
-                    <div className="flex items-center gap-3">
-                        <h4 className="font-light"><i className="text-red-500 pr-2 fa-solid fa-location-dot"></i>Rio de Janeiro, Rj</h4>
-                        <span className="font-light">|</span>
-                        <h4 className="font-light"><i className="text-pink-500 pr-2 fa-solid fa-mars"></i>Mulher</h4>
-                    </div>
-                    {/*<div className="text-center ">
-                        <p className="text-[16px] font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis rerum, dicta, ad sunt adipisci fuga illo modi dolorem voluptas vero nisi, tempore repudiandae eius?</p>
-                    </div>
-                    <div className="flex flex-col gap-3 w-full">
-                        <h2 className="text-xl font-semibold">Serviços:</h2>
-                        <nav>
-                            <ul className="flex items-center flex-wrap gap-2">
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                                <li className="text-[12px] font-medium border-2 border-blue-500 text-blue-500 rounded-full pr-[20px] pl-[20px] pt-[5px] pb-[5px]">Casal</li>
-                            </ul>
-                        </nav>
-                    </div> */}
-                </div>
-            </section>
-            <section>
-                <div className="">
-                    <nav>
-                        <ul className="bg-black text-white pt-3 flex items-center justify-center pr-[8px] pl-[8px] flex-wrap gap-3">
-                            <li className="bg-white pr-[12px] pl-[12px] pt-[3px] pb-[3px] rounded-[3px] text-black font-semibold">Fotos</li>
-                            <li>Vídeos</li>
-                            <li>Descrição</li>
-                            <li>Serviços</li>
-                            <li>Corpo</li>
-                            <li>Redes Sociais</li>
-                        </ul>
-                    </nav>
                 </div>
             </section>
             <section>
