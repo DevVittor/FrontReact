@@ -3,35 +3,21 @@ import { Link } from "react-router-dom";
 
 export default function Profile(){
 
-    const picture = "https://images.pexels.com/photos/17987491/pexels-photo-17987491/free-photo-of-automotivo-automotor-automobilistico-lindo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+    const picture = "https://images.pexels.com/photos/6953577/pexels-photo-6953577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 
     const [Foto] = useState(["https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg","https://images.pexels.com/photos/4169899/pexels-photo-4169899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/7389105/pexels-photo-7389105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/2657669/pexels-photo-2657669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/15422831/pexels-photo-15422831/free-photo-of-arvore-de-natal-computador-portatil-laptop-notebook.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/8278851/pexels-photo-8278851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/5882698/pexels-photo-5882698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/17615043/pexels-photo-17615043/free-photo-of-mesa-balcao-escritorio-em-casa-home-office.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/5196814/pexels-photo-5196814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/8297162/pexels-photo-8297162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/7584231/pexels-photo-7584231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/5702275/pexels-photo-5702275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/7314827/pexels-photo-7314827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" ,"https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg","https://images.pexels.com/photos/3571943/pexels-photo-3571943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/14585225/pexels-photo-14585225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/12290556/pexels-photo-12290556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/845245/pexels-photo-845245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/2839120/pexels-photo-2839120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/274973/pexels-photo-274973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/2928175/pexels-photo-2928175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/1983040/pexels-photo-1983040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"])
 
     return (
         <main>
             <section>
-                <div className="flex justify-center items-start p-3 gap-5">
+                <div className="flex justify-center items-start pt-[2px] pb-3 gap-5">
                 <div className="flex flex-col items-center justify-center gap-2">
-                        <div className="flex flex-col items-end justify-center gap-2">
-                            <div className="flex items-end justify-center">
-                                <img className="h-[350px] w-[350px] object-cover rounded-full" loading="lazy" src={picture} alt="" />
-                                <div className="absolute p-5">
+                        <div className="flex items-start justify-end">
+                                <img className="max-h-[350px] max-w-[300px] object-cover" loading="lazy" src={picture} alt="" />
+                                <div className="absolute p-3">
                                     <span className="rounded-[3px] bg-[#FE0000] text-white font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
                                 </div>
                             </div>
-                            <div className="">
-                                <div className="flex justify-center items-center w-[350px]">
-                                    <nav>
-                                        <ul className="flex gap-3 text-xl text-black">
-                                            <li><i className="bi bi-facebook"></i></li>
-                                            <li><i className="bi bi-instagram"></i></li>
-                                            <li><i className="bi bi-twitter"></i></li>
-                                            <li><i className="bi bi-tiktok"></i></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
                         <div className="flex items-center gap-3">
                             <h2 className="text-xl font-semibold ">Fernanda Lima, 26</h2>
                             <i className="text-blue-500 text-lg fa-solid fa-circle-check"></i>
@@ -42,7 +28,22 @@ export default function Profile(){
                             <h4 className="font-light"><i className="text-pink-500 pr-2 fa-solid fa-mars"></i>Mulher</h4>
                         </div>
                         <div className="text-center ">
-                            <p className="text-[16px] font-light 2xl:w-[425px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis rerum, dicta, ad sunt adipisci fuga illo modi dolorem voluptas vero nisi, tempore repudiandae eius?</p>
+                            <p className="text-[16px] font-light max-w-[310px] pr-[3px] pl-[3px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia perferendis rerum, dicta, ad sunt adipisci fuga illo modi dolorem voluptas vero nisi, tempore repudiandae eius?</p>
+                        </div>
+                        <div className="">
+                                <div className="flex justify-center items-center max-w-[350px]">
+                                    <nav>
+                                        <ul className="flex gap-3 text-xl text-black">
+                                            <li><i className="bi bi-facebook"></i></li>
+                                            <li><i className="bi bi-instagram"></i></li>
+                                            <li><i className="bi bi-twitter"></i></li>
+                                            <li><i className="bi bi-tiktok"></i></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        <div className="">
+                            <button className="bg-green-500 text-white rounded-[3px] pt-[3px] pb-[3px] text-lg font-medium pl-[15px] pr-[15px]"><i className="pr-2 fa-brands fa-whatsapp"></i>Conversar</button>
                         </div>
                         {/*<div className="flex flex-col gap-3 w-full">
                             <h2 className="text-xl font-semibold">Serviços:</h2>
@@ -70,21 +71,21 @@ export default function Profile(){
                 </div>
             </section>
             <section>
-                <div className="flex flex-col justify-center items-center w-full pb-3">
-                    <div className="flex flex-col justify-center items-center bg-black pr-5 pl-5 pt-2 pb-2 rounded-md">
+                <div className="flex flex-col justify-center items-center pt-3 pb-3 w-full bg-black">
+                    <div className="flex flex-col justify-center  items-center bg-black pr-3 pl-3 pt-2 pb-2 ">
                         <nav>
-                            <ul className="flex gap-3 text-white">
-                                <li><i className="text-xl fa-solid fa-camera"></i></li>
-                                <li><i className="text-xl fa-solid fa-child-reaching"></i></li>
-                                <li><i className="text-xl fa-solid fa-bell-concierge"></i></li>
-                                <li><i className="text-xl fa-solid fa-map-location-dot"></i></li>
+                            <ul className="flex justify-center items-center flex-wrap gap-5 text-white">
+                                <li className="flex flex-col justify-center items-center "><i className="text-xl fa-solid fa-camera"></i>Galeria</li>
+                                <li className="flex flex-col justify-center items-center "><i className="text-xl fa-solid fa-child-reaching"></i>Corpo</li>
+                                <li className="flex flex-col justify-center items-center "><i className="text-xl fa-solid fa-bell-concierge"></i>Serviços</li>
+                                <li className="flex flex-col justify-center items-center "><i className="text-xl fa-solid fa-map-location-dot"></i>Local</li>
                             </ul>
                         </nav>
                     </div>
                 </div>              
             </section>
             <section>
-                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 pb-3 pr-3 pl-3 ">
+                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 pb-3 pr-3 pl-3 bg-black">
                     
                         {Foto.map((link, index) => (
                             <Link to={`/${index + 1}`} key={index}>
