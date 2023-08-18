@@ -7,6 +7,7 @@ export default {
     proxy: {
       '/products': 'http://localhost:3000/', // Altere para o URL do seu servidor backend
       '/products/save': 'http://localhost:3000/',
+      '/products/:id': 'http://localhost:3000/products/:id',
     },
   },
 };

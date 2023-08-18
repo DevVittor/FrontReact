@@ -23,13 +23,13 @@ export default function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<NavBar/>}>
-        <Route index element={<Home/>}/>
-        <Route path="category" element={<Category/>} />
-        <Route path="article" element={<Article/>} />
-        <Route path="about" element={<About/>} />
-        <Route path="products" element={<Form/>}/>
-        <Route path="products/:id" element={<ProductPage/>}/>
-        <Route path="shop" element={<Shop/>}/>
+        <Route index exact element={<Home/>}/>
+        <Route path="category" exact element={<Category/>} />
+        <Route path="article" exact element={<Article/>} />
+        <Route path="about" exact element={<About/>} />
+        <Route path="products" exact element={<Form/>}/>
+        <Route path="/:id" element={<ProductPage/>}/>
+        <Route path="shop" exact element={<Shop/>}/>
         <Route path="*" element={<Error404/>}/>
       </Route>
     </Routes>
