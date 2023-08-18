@@ -33,7 +33,7 @@ export default function Profile(){
                             <div className="flex items-end justify-center">
                                 <img className="h-[250px] w-[250px] object-cover rounded-md" loading="lazy" src={picture} alt="" />
                                 <div className="absolute p-3">
-                                    <span className="rounded-[3px] bg-red-500 text-white font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
+                                    <span className="rounded-[3px] bg-[#FE0000] text-white font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
                                 </div>
                             </div>
                             <div className="">
@@ -87,7 +87,7 @@ export default function Profile(){
                 </div>
             </section>
             <section>
-                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 p-3 bg-black">
+                <div className="m-auto w-full  2xl:columns-7 lg:columns-5 md:columns-3 sm:columns-2 gap-3 pb-3 pr-3 pl-3 ">
                     
                         {Foto.map((link, index) => (
                             <Link to={`/${index + 1}`} key={index}>
