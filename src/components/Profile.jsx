@@ -12,9 +12,9 @@ export default function Profile(){
             <section>
                 <div className="flex justify-center items-start p-3 gap-5">
                 <div className="flex flex-col items-center justify-center gap-3 ">
-                        <div className="flex items-end justify-center ">
+                        <div className="flex items-end justify-center gap-2">
                             <div className="">
-                                <div className="flex flex-col justify-between items-center h-[250px] bg-black p-3">
+                                <div className="flex flex-col justify-between items-center h-[250px] bg-black p-3 rounded-md">
                                     <div className="">
                                         <nav>
                                             <ul className="flex flex-col gap-3 text-white">
@@ -31,13 +31,13 @@ export default function Profile(){
                                 </div>
                             </div>
                             <div className="flex items-end justify-center">
-                                <img className="h-[250px] w-[250px] object-cover " loading="lazy" src={picture} alt="" />
+                                <img className="h-[250px] w-[250px] object-cover rounded-md" loading="lazy" src={picture} alt="" />
                                 <div className="absolute p-3">
                                     <span className="rounded-[3px] bg-red-500 text-white font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
                                 </div>
                             </div>
                             <div className="">
-                                <div className="h-[250px] bg-black p-3">
+                                <div className="h-[250px] bg-black p-3 rounded-md">
                                     <nav>
                                         <ul className="flex flex-col gap-3 text-xl text-white">
                                             <li><i className="bi bi-facebook"></i></li>
