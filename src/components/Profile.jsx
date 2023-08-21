@@ -14,7 +14,7 @@ export default function Profile(){
                     <div className="flex md:flex-row flex-col justify-center md:items-start items-center md:border-2 md:border-gray-100">
                         <div className="">    
                             <div className="flex items-end justify-center">
-                                <img className="max-h-[350px] max-w-[300px] object-cover md:rounded-none rounded-md" loading="lazy" src={picture} alt="" />
+                                <img className="pointer-events-none max-h-[350px] max-w-[300px] object-cover md:rounded-none rounded-md" loading="lazy" src={picture} alt="" />
                                 <div className="absolute p-3">
                                     <span className="rounded-[3px] bg-white text-black font-semibold pr-2 pl-2 pt-[5px] pb-[5px]">R$ 250/h</span>
                                 </div>
